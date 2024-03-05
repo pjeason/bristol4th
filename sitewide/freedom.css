@@ -1,0 +1,371 @@
+/* Center main content */
+body {
+  margin: 0;
+}
+
+/* Set up navbar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f45042;
+}
+
+li {
+  float: left;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  vertical-align: middle;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 23px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #007dcc;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Stack navbar on a small screen */
+@media screen and (max-width: 480px) {
+  ul li {float: none;}
+}
+
+.active {
+  background-color: #d32f21;
+}
+
+/* Set up the page's content */
+.pagecontent {
+  background-color: #efefef;
+  width: 65%;
+  padding: 15px 25px 15px 25px;
+  margin: 0 auto;
+}
+
+.pagehead {
+  text-align: center;
+}
+
+.pagehead h1 {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.pagehead h3 {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+/* Style 5k & parade route instructions */
+.route {
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+/* Position the On The Go maps on the 5k & parade pages */
+.routemap{
+  float: left;
+}
+
+/* Style 5k & parade route instructions */
+ol {
+  display: inline-block;
+}
+
+/* Set up the footer bar */
+footer {
+  background-color: #f45042;
+  color: #fff;
+  padding: 15px 25px 15px 25px;
+  font-size: .75em;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+}
+
+.footer table {
+  width: 100%;
+  float: center;
+}
+
+.footer td {
+  width: 50%;
+  padding: 0px 25px 0px 25px;
+}
+
+/* Set up the announcement bar */
+.announcement {
+  background-color: #007dcc;
+  color: #fff;
+  padding: 15px 25px 15px 25px;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  text-align: center;
+  margin:0;
+}
+
+/* Style the image grid on the home page */
+.imgpanel {
+  float: left;
+  width: 33.333%;
+  margin: 0;
+}
+
+.clearfix {
+  content: "";
+  clear: both;
+  display: table;
+  margin: 0;
+}
+
+/* Style content buttons on subpages */
+.buttonbar {
+  text-align: center;
+  margin: 0;
+}
+
+a.button {
+  color:#000;
+  text-decoration: none;
+}
+
+button {
+  background-color: #f45042;
+  color: #fff;
+  border: 2px solid #f45042;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Style organizer page */
+.organizer table {
+  width: 100%;
+  text-align: top;
+  padding: 0px 25px 0px 25px;
+}
+
+.organizer td{
+  padding: 0px 25px 0px 25px;
+  width: 50%;
+  vertical-align: top;
+}
+
+.names {
+  padding-top: 40px;
+}
+
+/* Style sponsor page logos */
+.sponsorflexcontainer {
+  margin:0 auto;
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px;
+}
+
+.sponsor {
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+  padding:0 5px 15px 5px;
+}
+
+.sponsorpad { 
+  border:0; 
+  padding: 15px 0 8px 0;
+  width: 240px;
+}
+
+/* Style countdown clock in navbar */
+#countdown {
+  color: white;
+}
+
+li.countdown {
+  float: right;
+  padding: 5px 25px;
+}
+
+/* Style logo in navbar */
+.headerlogo {
+  height: 40px;
+  margin: 10px;
+}
+
+/* Style images for slideshow */
+img {
+  border: 0;
+}
+
+.mySlides {
+  display: none
+}
+
+/* Slideshow container */
+.slideshow-container-historical {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-container-onthepark {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Style outhouse race page */
+.outhousetable {
+  width: 33%; 
+  padding: 0px 25px 0px 25px; 
+  vertical-align: top;
+}
+
+/* Style embedded NEATV videos */
+.videoinpage {
+  padding-top: 25px;
+  text-align: center;
+  align-self: center;
+}
+
+.letter {
+  width: 80%;
+  border-style: solid;
+  border-color: white;
+  border-width: 7px;
+  padding: 10px;
+  margin-bottom: 15px;
+}

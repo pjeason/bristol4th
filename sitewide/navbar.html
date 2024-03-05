@@ -1,0 +1,83 @@
+<a href="/index.html" style="color: white; text-decoration: none;">
+<p class="announcement">2024 Theme: Beach Party!</p>
+</a>
+
+<ul>
+  <!-- Bristol 4th Logo -->
+  <li><img src="/images/logo-bristol4th.png" class="headerlogo" alt="Logo"></li>
+
+<!-- Home Button -->
+  <li><a href="/index.html">Home</a></li>
+
+<!-- About Button -->
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">About</a>
+    <div class="dropdown-content">
+      <a href="/about/bristol4th.html">About Bristol 4th</a>
+      <a href="/about/independenceday.html">About Independence Day</a>
+      <a href="/about/organizers.html">Committee Members</a>
+    </div>
+  </li>
+
+<!-- July 3rd Button -->
+  <li><a href="/july3rd.html">July 3rd</a></li>
+
+<!-- July 4th Button -->
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">July 4th</a>
+    <div class="dropdown-content">
+      <a href="/july4th/roadrace.html">5K Road Race</a>
+      <a href="/july4th/outhouserace.html">Outhouse Race</a>
+      <a href="/july4th/parade.html">Parade</a>
+      <a href="/july4th/onthepark.html">On The Park</a>
+      <a href="/july4th/raffle.html">Raffle</a>
+    </div>
+  </li>
+
+<!-- Support Button -->
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Support</a>
+    <div class="dropdown-content">
+      <a href="/support/join.html">Join The Committee</a>
+      <a href="/support/chickenbbq.html">Chicken Barbeque</a>
+      <a href="/support/donate.html">Donate</a>
+      <a href="/support/sponsors.html">Sponsors</a>
+    </div>
+  </li>
+
+<!-- Contact Button -->
+  <li><a href="/contact.html">Contact</a></li>
+
+<!-- Countdown Clock -->
+  <li class="countdown"><p id="countdown"></p>
+    <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jul 4, 2024 00:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+      // Get todays date and time
+      var now = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="countdown"
+      document.getElementById("countdown").innerHTML = "Countdown to July 4th: " + days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "Happy 4th!";
+      }
+    }, 1000);
+    </script>
+</li>
+</ul>

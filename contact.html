@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bristol, VT Fourth of July - Contact</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="keywords" content="bristol, vermont, vt, 4th, fourth, july, independence, day, contact, people, questions, comments, concerns">
+<meta name="description" content="Who to contact. Part of the Bristol, VT Independence Day celebration.">
+<link rel="icon" type="image/png" href="/images/favicon.png">
+<link rel="stylesheet" href="/sitewide/freedom.css" type="text/css" charset="utf-8">
+<style type="text/css" title="text/css"></style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('#navbar').load("/sitewide/navbar.html");
+    });
+</script>
+<script>
+  $(document).ready(function(){
+    $('#bottombar').load("/sitewide/bottombar.html");
+    });
+</script>
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<div class="pagecontent">
+	<div class="pagehead">
+		<h1>Contact Us</h1>
+		<p><em>Questions? Comments? Concerns? Let us know!</em></p>
+
+	<select id="mySelect" onchange="myFunction()">
+		<option value="">Select topic...
+		<option value="Steve & Brenda Barsalou, sbarsalou@comcast.net / bbarsalou@comcast.net, (802) 453-4391 / (802) 233-2451">Chicken Barbeque
+		<option value="Cecil Foster, cecil@gmavt.net, (802) 453-4877">July 3rd Fireworks Show
+		<option value="Janet Foster, janet.foster.vt@gmail.com, (802) 453-4877">July 3rd Vending
+		<option value="Janet Foster, janet.foster.vt@gmail.com, (802) 453-4877">July 4th Vending
+		<option value="Ashley Smith, ashley05443@gmail.com, (802) 989-9269 OR Robert Wilkey, wilkey679@hotmail.com, (218) 259-0387">Parade
+		<option value="Patrick Eason, eason.patrick@gmail.com, (802) 377-3548">Website
+		<option value="Troy Paradee, paradeefamily@gmail.com, (802) 453-3856">5k Road Race
+		<option value="Meredith McFarland, recdirector@bristolvt.org, (802) 349-8558">Outhouse Race
+		<option value="Cecil Foster, cecil@gmavt.net, (802) 453-4877">General Inquiries
+	</select>
+
+	<p id="contact"></p>
+
+	<script>
+	function myFunction() {
+	  var x = document.getElementById("mySelect").value;
+	  document.getElementById("contact").innerHTML = "Please contact " + x;
+	}
+	</script>
+
+	</div>
+
+</div>
+
+<footer>
+	<div id="bottombar"></div>
+</footer>
+</body>
+</html>
